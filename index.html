@@ -5,7 +5,8 @@
 	<title>More Recipes</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -24,10 +25,10 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">                        
                     <ul class="nav navbar-nav pull-right">
-                        <li class=""><a href="#">User Dashboard</a> </li> 
-                        <li class=""><a href="#">Top Recipes</a></li>
-                        <li class=""><a href="#">Add  Recipe</a></li>
-		        <li class=""><a href="#">View all Recipes</a></li>
+                        <li class=""><a href="user/index.html">User Dashboard</a> </li> 
+                        <li class=""><a href="reviews.html">Top Recipes</a></li>
+                        <li class=""><a href="user/index.html">Add  Recipe</a></li>
+		        <li class=""><a href="favourite.html">My Favourites</a></li>
 		        <li class=""><a href="#">About</a></li>
                     </ul>
                 </div>
@@ -46,10 +47,10 @@
 						<div class="row">
 						<div class="form-align">
 							<div class="col-xs-6">
-								<a href="#" class="active" id="login-form-link">Login</a>
+								<a href="reviews.html" class="active" id="login-form-link">Login</a>
 							</div>
 							<div class="col-xs-6">
-								<a href="#" id="register-form-link">Register</a>
+								<a href="user/index.html" id="register-form-link">Register</a>
 							</div>
 						</div>
 						<hr>
@@ -60,7 +61,7 @@
 								<form id="login-form" action="#" method="post" role="form" style="display: block;">
 								<form id="login-form" action="#" method="post" role="form" style="display: block;">
 									<div class="form-group">
-										<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+										<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username/Email" value="">
 									</div>
 									<div class="form-group">
 										<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
@@ -127,7 +128,7 @@
 </div>
 </footer>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 </html>

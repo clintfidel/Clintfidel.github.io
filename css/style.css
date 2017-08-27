@@ -2,7 +2,6 @@ html, body {
     height: auto;
 }
 body {
-  padding-top: 90px;
   background: linear-gradient(to bottom, rgb(222, 166, 140), rgba(62, 37, 12, 0.65)), url(../images/recipe1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,6 +13,7 @@ body {
   }
 .wrapper {
     min-height: 100%;
+    padding-top: 90px;
     height: auto !important;
     height: 100%;
     margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
@@ -25,7 +25,8 @@ body {
 .navbar-brand{
   font-size: 32px;
   font-weight: bold;
-  font-family: cursive;
+  font-family: Lobster, sans-serif;
+  color: white !important;
 }
 
 .panel-login {
@@ -89,7 +90,7 @@ body {
   font-weight: normal;
   padding: 14px 0;
   text-transform: uppercase;
-  border-color: #d64d1a;
+  -webkit-box-shadow: 0 0 10px black;
 }
 .btn-login:hover,
 .btn-login:focus {
@@ -97,16 +98,23 @@ body {
   background-color: #d64d1a;
   border-color: #d64d1a;
   border-radius: 15px;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
 }
 .forgot-password {
-  text-decoration: underline;
   color: #888;
 }
-.forgot-password:hover,
-.forgot-password:focus {
+.text-center a:hover,
+.text-center a:focus {
   text-decoration: underline;
-  color: #666;
+  font-size: 20px;
+  color: #d64d1a;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
 }
+
 
 .btn-register {
   background-color: #d64d1a;
@@ -117,7 +125,7 @@ body {
   font-weight: normal;
   padding: 14px 0;
   text-transform: uppercase;
-  border-color: #1CB94A;
+  -webkit-box-shadow: 0 0 10px black;
 }
 .btn-register:hover,
 .btn-register:focus {
@@ -125,6 +133,9 @@ body {
   background-color: #d64d1a;
   border-color: #d64d1a;
   border-radius: 15px;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
 }
 
 .form-align{
@@ -151,14 +162,16 @@ border: none;
   background: rgba(154, 154, 154, 0.27);
 }
 .navbar a, li>a, li>a:focus, li>a:hover, .navbar-toggle{
- color: #fff;
+ color: #fff !important;
  
 }
 .nav>li>a:focus,
 .nav>li>a:hover {
   text-decoration: underline;
 }
-
+#mynavbar {
+  color: #fff;
+}
 .navbar-toggle .icon-bar{
     color: #fff;
     background: #000000;
@@ -188,3 +201,225 @@ border: none;
     color:#696969;
 }
 
+/* css for USER-PAGE
+
+Profile container */
+.profile {
+  margin: 20px 0;
+  padding-top: 20px;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+  padding: 60px 0 100% 0;
+  background: #fff;
+  margin-left: -60px;
+  height: 100%;
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #5b9bd1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+#default {
+  background-color:lightblue;
+  margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+    
+.profile-usermenu {
+  margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+  border-bottom: 3px solid rgb(222, 166, 140);
+}
+
+.profile-usermenu ul li:first-child {
+  border-top: 3px solid rgb(222, 166, 140);
+}
+
+
+.profile-usermenu ul li a {
+  color:#000 !important;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+  background-color: rgba(222, 166, 140, .5);
+  color: #000;
+  padding-left: 30px;
+  -webkit-transition: .5s;
+  transition: 1s;
+}
+
+.profile-usermenu ul li.active a {
+  color: #5b9bd1;
+  background-color: #f6f9fb;
+}
+
+#myModal {
+  display: block; padding-left: 17px;
+}
+/* Profile Content */
+
+.thumbnail {
+  padding:0;
+  float: right;
+}
+/*CSS FOR USER-REVIEW PAGE
+*/
+#searchRecipe {
+  margin-right: 470px !important;
+}
+.favourites {
+  color: #fff !important;
+  font-family: Lobster, sans-serif;
+  font-size: 20px !important;
+}
+.profile-sideBar {
+  height: auto;
+  background-color:white;
+  position: right;
+  padding-left: -20px;
+  margin-left: 50px;
+}
+.recipe {
+  background-color: #fff;
+  margin: 5px; 
+}
+
+/*ADD RECIPE MODAL*/
+
+.addrecipemodal-container {
+  padding: 30px;
+  width: auto !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.addrecipemodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
+}
+
+.addrecipemodal-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.addrecipemodal-container input[type=text]{
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.addrecipemodal-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.addrecipemodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+}
+
+.addrecipemodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #d64d1a;
+  padding: 17px 0px;
+  font-family: roboto;
+  font-size: 14px;
+}
+
+.addrecipemodal-submit:hover {
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #d64d1a;
+ }
+
+.addrecipemodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+} 
+
+nav > li > a {
+  color: #fff !important;
+}
